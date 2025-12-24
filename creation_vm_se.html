@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SAE S1.03</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+<body>
+<nav class="nav nav-pills nav-fill">
+    <a class="nav-link" href="index.html">Acceuil</a>
+    <a class="nav-link active" aria-current="page" href="creation_vm_se.html">Création VM et SE</a>
+    <a class="nav-link" href="admin_utilisateurs.html">Administrateur et utilisateurs</a>
+    <a class="nav-link" href="prompt.html">Prompt</a>
+    <a class="nav-link" href="service_web.html">Service Web</a>
+</nav>
+<h1 class = "text-center">Etapes de la création d'une machine virtuelle et de la configuration du Système d'exploitation</h1>
+<h3>Création de la VM</h3>
+<ul>
+    <li>
+        On a décidé d’utiliser l’environnement VMWare Workstation pour créer notre machine virtuelle
+    </li>
+    <li>
+        Après avoir installé le logiciel, on clique sur « Create a New Virtual Machine » :
+        <img src="assets/images/etape1_1.png" class="img-thumbnail" width="900" alt="etape1_1">
+
+    </li>
+    <li>
+        On a décidé d’utiliser la distribution de Linux Ubuntu qu’on a obtenu sur <a href="https://ubuntu.com/download/desktop">ce site</a> :
+    </li>
+    <li>
+        On donne l’iso qu’on a installé dans « Installer disc image file (iso) » : <br>
+        <img src="assets/images/etape1_2.png" class="img-fluid"  alt="etape1_2">
+    </li>
+    <li>
+        On sélectionne le Système d’exploitation que l’on veut avoir sur notre VM :
+        <br>
+        <img src="assets/images/etape1_3.png" class="img-fluid"  alt="etape1_3">
+    </li>
+    <li>
+        On choit ensuite le nom de notre VM et son lieu de sauvegarde : <br>
+        <img src="assets/images/etape1_4.png" class="img-fluid"  alt="etape1_4">
+
+    </li>
+    <li>
+        On doit maintenant donner une taille maximale pour le disque dur de la machine virtuelle (qui est sur le disque de la machine physique). On choisit la taille recommandée pour Ubuntu : 20 Go.
+        <img src="assets/images/etape1_5.png" class="img-fluid"  alt="etape1_5">
+
+    </li>
+    <li>On laisse les derniers paramètres de la VM par défaut : <br>
+        <img src="assets/images/etape1_6.png" class="img-fluid"  alt="etape1_6">
+
+    </li>
+    <li>La VM est maintenant créée sur VMWare</li>
+</ul>
+<h3>Configuration du SE</h3>
+<ul><li>
+    On doit configurer Ubuntu. On sélectionne la langue :
+    <img src="assets/images/etape2_1.png" class="img-fluid"  alt="etape2_1">
+    </li>
+    <li>
+        On sélectionne la disposition du clavier :
+        <img src="assets/images/etape2_2.png" class="img-fluid"  alt="etape2_2">
+    </li>
+    <li>
+        Notre machine est reliée au réseau par câble uniquement, donc on sélectionne cette option pour notre VM :
+        <img src="assets/images/etape2_3.png" class="img-fluid"  alt="etape2_3">
+    </li>
+    <li>
+        On doit éjecter le disque CDRom (pour éviter que la VM ne boot à chaque redémarrage) :
+        <img src="assets/images/etape2_4.png" class="img-fluid"  alt="etape2_4">
+    </li>
+</ul>
+<footer class="mt-auto">
+    <div class="container">
+        <hr class="mb-4">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>&copy; 2026 Saé S1.03 - Lowen Singh Masson et Lény Moisant</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

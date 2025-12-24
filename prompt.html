@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SAE S1.03</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+<nav class="nav nav-pills nav-fill">
+    <a class="nav-link" href="index.html">Acceuil</a>
+    <a class="nav-link" href="creation_vm_se.html">Création VM et SE</a>
+    <a class="nav-link" href="admin_utilisateurs.html">Administrateur et utilisateurs</a>
+    <a class="nav-link active" aria-current="page" href="prompt.html">Prompt</a>
+    <a class="nav-link" href="service_web.html">Service Web</a>
+</nav>
+<h1 class="text-center">Personnalisation du prompt</h1>
+<ul>
+    <li>
+        Tout d’abord, il faut ouvrir le fichier bashrc. C’est dedans que l’on va pouvoir modifier le prompt. On utilise la commande nano suivie du chemin du nom du fichier que l’on veut ouvrir :
+        <img src="assets/images/etape4_1.png" class="img-fluid" alt="etape4_1">
+    </li>
+    <li>
+        Il faut trouver dans ce fichier la première ligne du PS1, c’est cette ligne qui faut modifier pour changer le prompt :
+        <img src="assets/images/etape4_2.png" class="img-fluid" alt="etape4_2">
+    </li>
+    <li>
+        Pour personnaliser notre prompt, on a utilisé <a href="https://bash-prompt-generator.org">ce site</a> qui nous donne la syntaxe pour modifier la ligne PS1 avec les éléments que l’on veut ajouter :
+        <img src="assets/images/etape4_3.png" class="img-fluid" alt="etape4_3">
+    </li>
+    <li>
+        On modifie le fichier par la syntaxe donnée par le site et pour enregistrer les modifications au fichier, on doit faire Ctrl+O puis Entrée pour enregistrer et Ctrl+X pour quitter.
+    </li>
+    <li>
+        Le prompt maintenant modifié : <br>
+        <img src="assets/images/etape4_4.png" class="img-fluid" alt="etape4_4">
+    </li>
+</ul>
+<footer class="mt-auto">
+    <div class="container">
+        <hr class="mb-4">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>&copy; 2026 Saé S1.03 - Lowen Singh Masson et Lény Moisant</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

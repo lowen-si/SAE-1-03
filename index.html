@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SAE S1.03</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+<nav class="nav nav-pills nav-fill">
+    <a class="nav-link active" aria-current="page" href="index.html">Acceuil</a>
+    <a class="nav-link" href="creation_vm_se.html">Création VM et SE</a>
+    <a class="nav-link" href="admin_utilisateurs.html">Administrateur et utilisateurs</a>
+    <a class="nav-link" href="prompt.html">Prompt</a>
+    <a class="nav-link" href="service_web.html">Service Web</a>
+</nav>
+
+    <h1 class = "text-center">Rapport de la Saé S1.03</h1>
+
+<h5>Groupe 102 - Binome 1</h5>
+<h5>Lowen SINGH MASSON - Lény MOISANT</h5>
+<h3>Introduction</h3>
+<ol>
+    <li>Définition de la virtualisation<br>La virtualisation est une technique informatique qui permet de faire fonctionner plusieurs systèmes d’exploitation ou environnements sur une même machine physique, en les isolant les uns des autres.
+        Elle repose sur un logiciel appelé hyperviseur, qui crée des machines virtuelles (VM) partageant les ressources matérielles réelles (processeur, mémoire, disque, réseau).
+    </li>
+    <li>
+        Différence entre émulateur, simulateur et outil de virtualisationférence entre émulateur, simulateur et outil de virtualisation
+        <br>
+        Emulateur
+        <ul><li>
+            Reproduit complètement un autre matériel ou une autre architecture
+        </li>
+        <li>
+            Permet d’exécuter un système prévu pour un matériel différent
+        </li><li>Plus lent car tout est recréé par logiciel
+            </li></ul>
+        <br>
+        Simulateur
+        <ul><li>
+            Imite le comportement d’un système, sans forcément l’exécuter réellement
+        </li>
+        <li>Utilisé surtout pour l’apprentissage, les tests ou la modélisation
+        </li></ul>
+        <br>
+        Outil de virtualisation
+        <ul>
+            <li>
+                Exécute plusieurs systèmes sur le même matériel réel
+            </li>
+            <li>Les systèmes invités utilisent directement l’architecture de la machine hôte</li>
+            <li>Plus rapide et plus réaliste que l’émulation</li>
+        </ul>
+    </li>
+    <li>Type de virtualisation pour les environnements VirtualBox, VmWare Workstation et StratusType de virtualisation pour les environnements VirtualBox, VmWare Workstation et Stratus
+        <br>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">Environnement</th>
+                <th scope="col">Type d'hyperviseur</th>
+                <th scope="col">Type de virtualisation</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>VirtualBox</td>
+                <td>Type 2</td>
+                <td>Hebergée</td>
+            </tr>
+            <tr>
+                <td>VMWare Workstation</td>
+                <td>Type 2</td>
+                <td>Hebergée</td>
+            </tr>
+            <tr>
+                <td>Stratus</td>
+                <td>Type 1</td>
+                <td>Native (bare metal)</td>
+            </tr>
+            </tbody>
+        </table>
+    </li>
+</ol>
+<h3>Diagramme de Gantt </h3>
+<img src="assets/images/diagramme_gantt.png" class="img-fluid" alt="Diagramme de Gantt">
+<footer class="mt-auto">
+    <div class="container">
+        <hr class="mb-4">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>&copy; 2026 Saé S1.03 - Lowen Singh Masson et Lény Moisant</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
